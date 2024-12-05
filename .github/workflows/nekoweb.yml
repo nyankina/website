@@ -1,8 +1,4 @@
-on:
-  workflow_run:
-    workflows: ['Deploy to GitHub Pages']
-    types:
-      - completed
+on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -19,4 +15,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
           nekoweb-folder: 'site'
-          directory: '/'
+          directory: 'src'
