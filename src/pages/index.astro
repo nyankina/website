@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets'
+import Background from 'assets/bg.gif'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://rsms.me/" />
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+		<title>nyk</title>
+	</head>
+	<body class="place-items-center bg-gradient-to-r from-indigo-900 to-violet-300">
+		<div id="container" class="m-4 place-items-center p-4 text-white sm:m-0 sm:w-[600px]">
+			<div id="1st row" class="rounded-2xl bg-slate-900 bg-opacity-60 p-4 text-center text-white">
+				<div class="inline sm:pb-1">
+					<h1 class="text-2xl font-bold sm:text-3xl">Hey, I'm Quinn&nbsp;</h1>
+					<p class="opacity-60">
+						<span>[site still in work]</span> [transgender] [she/they] [gamedev] &nbsp;
+					</p>
+				</div>
+				&nbsp;
+				<p>&nbsp; This actually my 5th website redesign and I'm lazy to set up an archive :p</p>
+				<br />
+				<p>
+					I was actually going to go for a <a href="https://bentogrids.com">Bento box design</a> but
+					I was having troubles with grid boxes 😢 <i>maybe another time</i>
+				</p>
+			</div>
+			<br />
+			<div id="2nd row" class="rounded-2xl bg-slate-900 bg-opacity-60 p-4 text-center text-white">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga optio facilis modi
+					consectetur provident! Voluptatum ut minus hic, at earum id sequi accusamus iure odio
+					similique deserunt delectus saepe. Ducimus.
+				</p>
+			</div>
+		</div>
+		<div class="m-4 text-center text-white sm:absolute sm:left-0 sm:top-0 sm:text-left">
+			<img
+				class="mb-2 rounded-2xl"
+				src="https://github-profile-apple-music.web.app/api/v1/users/U5MK4lc4kaximiCoaZKm/recent/played/tracks?template=template_1_1"
+				alt="Apple Music Now Playing"
+				srcset=""
+			/>
+			<p class="w-[256px]">Follow me on:</p>
+			<p><a href="https://i.airbuds.fm/nyk/RPHsc07ZVi">airbuds</a></p>
+			<p><a href="https://music.apple.com/profile/nyk420?ls">Apple Music</a></p>
+			<p><a href="https://bsky.app/profile/nyankina.bsky.social">Bluesky</a></p>
+			<p><a href="https://github.com/nyankina">Github</a></p>
+		</div>
+	</body>
+</html>
+
+<style>
+	:root {
+		font-family: Inter, sans-serif;
+		font-feature-settings:
+			'liga' 1,
+			'calt' 1; /* fix for Chrome */
+	}
+	@supports (font-variation-settings: normal) {
+		:root {
+			font-family: InterVariable, sans-serif;
+		}
+	}
+
+	a {
+		opacity: 0.6;
+	}
+	a:hover {
+		opacity: 1;
+	}
+</style>
